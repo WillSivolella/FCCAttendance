@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='AttendanceTrainData' inline='true' name='federated.0ylrfax01m13b419qjhmw16ogymn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AttendanceTrainData' name='textscan.13mauln07jktk51dk051u0ssxg68'>
+            <connection class='textscan' directory='C:/Users/student/Documents/FCC Case Study' filename='AttendanceTrainData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.13mauln07jktk51dk051u0ssxg68' name='AttendanceTrainData.csv' table='[AttendanceTrainData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Index' ordinal='1' />
+            <column datatype='integer' name='Attendance' ordinal='2' />
+            <column datatype='integer' name='Promotion.Night' ordinal='3' />
+            <column datatype='integer' name='Weekend' ordinal='4' />
+            <column datatype='string' name='Day.of.the.Week' ordinal='5' />
+            <column datatype='integer' name='FCC.Rank' ordinal='6' />
+            <column datatype='integer' name='Opp.Rank' ordinal='7' />
+            <column datatype='date' name='Date' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.13mauln07jktk51dk051u0ssxg68' name='AttendanceTrainData.csv' table='[AttendanceTrainData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Index' ordinal='1' />
+            <column datatype='integer' name='Attendance' ordinal='2' />
+            <column datatype='integer' name='Promotion.Night' ordinal='3' />
+            <column datatype='integer' name='Weekend' ordinal='4' />
+            <column datatype='string' name='Day.of.the.Week' ordinal='5' />
+            <column datatype='integer' name='FCC.Rank' ordinal='6' />
+            <column datatype='integer' name='Opp.Rank' ordinal='7' />
+            <column datatype='date' name='Date' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attendance]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Attendance</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Promotion.Night</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Promotion.Night]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Promotion.Night</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekend</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weekend]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Weekend</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day.of.the.Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day.of.the.Week]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Day.of.the.Week</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FCC.Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FCC.Rank]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>FCC.Rank</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opp.Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Opp.Rank]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Opp.Rank</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[AttendanceTrainData.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Match Attendance' datatype='integer' name='[Attendance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[Attendance]' peg='0' size='500' />
+      </column>
+      <column datatype='integer' name='[Attendance]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Promotion.Night (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[Promotion.Night]' new-bin='true' />
+      </column>
+      <column datatype='integer' name='[Promotion.Night]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Weekend (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[Weekend]' new-bin='true' />
+      </column>
+      <column datatype='integer' name='[Weekend]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AttendanceTrainData.csv' datatype='table' name='[__tableau_internal_object_id__].[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AttendanceTrainData.csv' id='AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4'>
+            <properties context=''>
+              <relation connection='textscan.13mauln07jktk51dk051u0ssxg68' name='AttendanceTrainData.csv' table='[AttendanceTrainData#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Index' ordinal='1' />
+                  <column datatype='integer' name='Attendance' ordinal='2' />
+                  <column datatype='integer' name='Promotion.Night' ordinal='3' />
+                  <column datatype='integer' name='Weekend' ordinal='4' />
+                  <column datatype='string' name='Day.of.the.Week' ordinal='5' />
+                  <column datatype='integer' name='FCC.Rank' ordinal='6' />
+                  <column datatype='integer' name='Opp.Rank' ordinal='7' />
+                  <column datatype='date' name='Date' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<Match Attendance from 2021 and 2022 Histogram>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AttendanceTrainData' name='federated.0ylrfax01m13b419qjhmw16ogymn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ylrfax01m13b419qjhmw16ogymn'>
+            <column caption='Match Attendance' datatype='integer' name='[Attendance (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Attendance]' peg='0' size='500' />
+            </column>
+            <column datatype='integer' name='[Attendance]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[FCC.Rank]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Index]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Opp.Rank]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Promotion.Night (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Promotion.Night]' new-bin='true' />
+            </column>
+            <column datatype='integer' name='[Promotion.Night]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weekend (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[Weekend]' new-bin='true' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='AttendanceTrainData.csv' datatype='integer' name='[__tableau_internal_object_id__].[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Weekend]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AttendanceTrainData.csv' datatype='table' name='[__tableau_internal_object_id__].[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attendance]' derivation='Count' name='[cnt:Attendance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attendance (bin)]' derivation='None' name='[none:Attendance (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FCC.Rank]' derivation='Sum' name='[sum:FCC.Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Index]' derivation='Sum' name='[sum:Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Opp.Rank]' derivation='Sum' name='[sum:Opp.Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Promotion.Night]' derivation='Sum' name='[sum:Promotion.Night:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekend]' derivation='Sum' name='[sum:Weekend:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ylrfax01m13b419qjhmw16ogymn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[cnt:Attendance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[__tableau_internal_object_id__].[cnt:AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:F1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:FCC.Rank:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:Index:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:Opp.Rank:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:Promotion.Night:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ylrfax01m13b419qjhmw16ogymn].[sum:Weekend:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ylrfax01m13b419qjhmw16ogymn].[Promotion.Night (group)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Promotion.Night (group)]' />
+              <groupfilter function='member' level='[Promotion.Night (group)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ylrfax01m13b419qjhmw16ogymn].[Weekend (group)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Weekend (group)]' />
+              <groupfilter function='member' level='[Weekend (group)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ylrfax01m13b419qjhmw16ogymn].[:Measure Names]</column>
+            <column>[federated.0ylrfax01m13b419qjhmw16ogymn].[Promotion.Night (group)]</column>
+            <column>[federated.0ylrfax01m13b419qjhmw16ogymn].[Weekend (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0ylrfax01m13b419qjhmw16ogymn].[__tableau_internal_object_id__].[cnt:AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0ylrfax01m13b419qjhmw16ogymn].[__tableau_internal_object_id__].[cnt:AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4:qk]' field-type='quantitative' max='6' min='-1' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ylrfax01m13b419qjhmw16ogymn].[__tableau_internal_object_id__].[cnt:AttendanceTrainData.csv_EDC848C945A140E1B4797E6FFBC4CBF4:qk]</rows>
+        <cols>[federated.0ylrfax01m13b419qjhmw16ogymn].[none:Attendance (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0ylrfax01m13b419qjhmw16ogymn].[Attendance (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0A52C6E1-26B0-4348-8068-8B786C63549A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='47' type='filters' />
+            <card size='107' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylrfax01m13b419qjhmw16ogymn].[Promotion.Night (group)]</field>
+            <field>[federated.0ylrfax01m13b419qjhmw16ogymn].[Weekend (group)]</field>
+            <field>[federated.0ylrfax01m13b419qjhmw16ogymn].[none:Attendance (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52FE9D00-E519-40AE-AEFB-0ABB9623343F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='288' name='Sheet 1' width='288'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
